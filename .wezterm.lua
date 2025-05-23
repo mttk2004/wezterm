@@ -12,6 +12,13 @@ config.font_size = 13.0
 config.color_scheme = "Tokyo Night" -- Theme hiện đại và dễ nhìn
 config.window_background_opacity = 0.95 -- Tăng độ đậm một chút để dễ đọc hơn
 
+-- Tùy chỉnh màu sắc
+config.colors = {
+  -- Màu sắc cho vùng chọn
+  selection_fg = 'black',
+  selection_bg = '#fffacd',
+}
+
 -- Background với hình ảnh mờ (uncomment nếu muốn sử dụng)
 -- config.background = {
 --   {
@@ -117,10 +124,6 @@ table.insert(config.hyperlink_rules, {
   regex = [[\b([\w-]+/[\w-]+)\b]],
   format = 'https://github.com/$1',
 })
-
--- Hiệu ứng khi copy text
-config.selection_fg = 'black'
-config.selection_bg = '#fffacd'
 
 -- Hiệu ứng khi khởi động
 config.exit_behavior = 'Close'
