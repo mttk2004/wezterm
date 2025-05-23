@@ -91,16 +91,69 @@ config.keys = {
     mods = 'CTRL',
     action = act.ResetFontSize,
   },
+
   -- Phím tắt để điều chỉnh kích thước pane
   {
     key = '[',
     mods = 'CTRL|SHIFT',
-    action = act.AdjustPaneSize { "Left", 1 },
+    action = act.AdjustPaneSize { "Left", 5 },
   },
   {
     key = ']',
     mods = 'CTRL|SHIFT',
-    action = act.AdjustPaneSize { "Right", 1 },
+    action = act.AdjustPaneSize { "Right", 5 },
+  },
+  {
+    key = 'UpArrow',
+    mods = 'CTRL|SHIFT',
+    action = act.AdjustPaneSize { "Up", 5 },
+  },
+  {
+    key = 'DownArrow',
+    mods = 'CTRL|SHIFT',
+    action = act.AdjustPaneSize { "Down", 5 },
+  },
+
+  -- Thêm phím tắt để làm việc với tab và pane
+  {
+    key = 't',
+    mods = 'CTRL|SHIFT',
+    action = act.SpawnTab "CurrentPaneDomain",
+  },
+  {
+    key = 'w',
+    mods = 'CTRL|SHIFT',
+    action = act.CloseCurrentTab { confirm = true },
+  },
+  {
+    key = '-',
+    mods = 'CTRL|SHIFT',
+    action = act.SplitVertical { domain = "CurrentPaneDomain" },
+  },
+  {
+    key = '\\',
+    mods = 'CTRL|SHIFT',
+    action = act.SplitHorizontal { domain = "CurrentPaneDomain" },
+  },
+  {
+    key = 'z',
+    mods = 'CTRL|SHIFT',
+    action = act.TogglePaneZoomState,
+  },
+  {
+    key = 'c',
+    mods = 'CTRL|SHIFT',
+    action = act.CopyTo "Clipboard",
+  },
+  {
+    key = 'v',
+    mods = 'CTRL|SHIFT',
+    action = act.PasteFrom "Clipboard",
+  },
+  {
+    key = 'f',
+    mods = 'CTRL|SHIFT',
+    action = act.Search { CaseSensitiveString = "" },
   },
 }
 
