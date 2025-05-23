@@ -54,18 +54,18 @@ config.cursor_blink_rate = 500 -- Tốc độ nhấp nháy con trỏ
 config.default_cursor_style = "SteadyBar" -- Kiểu con trỏ thanh đứng
 
 -- Hiệu ứng cửa sổ và font
-config.window_frame = {
-  font = wezterm.font { family = "Roboto", weight = "Bold" },
-  font_size = 11.0,
-  border_left_width = '0.5cell',
-  border_right_width = '0.5cell',
-  border_bottom_height = '0.25cell',
-  border_top_height = '0.25cell',
-  border_left_color = 'darkgray',
-  border_right_color = 'darkgray',
-  border_bottom_color = 'darkgray',
-  border_top_color = 'darkgray',
-}
+-- config.window_frame = {
+--   font = wezterm.font { family = "Roboto", weight = "Bold" },
+--   font_size = 11.0,
+--   border_left_width = '0.5cell',
+--   border_right_width = '0.5cell',
+--   border_bottom_height = '0.25cell',
+--   border_top_height = '0.25cell',
+--   border_left_color = '#2b3045',
+--   border_right_color = '#2b3045',
+--   border_bottom_color = '#2b3045',
+--   border_top_color = '#2b3045',
+-- }
 
 -- Animation
 config.animation_fps = 60 -- Tốc độ khung hình cho animation
