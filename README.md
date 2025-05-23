@@ -9,18 +9,34 @@
 - **Font đẹp** - Sử dụng CaskaydiaCove Nerd Font với trọng lượng nhẹ
 - **Hiệu ứng trong suốt** - Độ trong suốt 95% để có thể nhìn thấy nền phía sau
 - **Padding thoáng** - Khoảng cách rộng rãi xung quanh nội dung
-- **Phím tắt tiện lợi** - Phím tắt để điều chỉnh font size, độ trong suốt
+- **Phím tắt tiện lợi** - Phím tắt để điều chỉnh font size và các chức năng khác
 - **Hiệu ứng đẹp mắt** - Hiệu ứng khi copy text, nhấn phím, cuộn
 
-## Phím tắt
+## Phím tắt tùy chỉnh
 
 - `Ctrl + =`: Tăng kích thước font
 - `Ctrl + -`: Giảm kích thước font
 - `Ctrl + 0`: Khôi phục kích thước font mặc định
-- `Ctrl + Shift + PageDown`: Giảm độ trong suốt
-- `Ctrl + Shift + PageUp`: Tăng độ trong suốt
 - `Ctrl + Shift + [`: Điều chỉnh kích thước pane sang trái
 - `Ctrl + Shift + ]`: Điều chỉnh kích thước pane sang phải
+- `Ctrl + Shift + ↑`: Điều chỉnh kích thước pane lên trên
+- `Ctrl + Shift + ↓`: Điều chỉnh kích thước pane xuống dưới
+- `Ctrl + Shift + C`: Sao chép văn bản
+- `Ctrl + Shift + V`: Dán văn bản
+- `Ctrl + Shift + F`: Tìm kiếm văn bản
+
+## Phím tắt mặc định của WezTerm
+
+WezTerm có nhiều phím tắt mặc định hữu ích:
+
+- `Ctrl + Shift + T`: Mở tab mới
+- `Ctrl + Shift + W`: Đóng tab hiện tại
+- `Ctrl + Shift + -`: Chia đôi pane theo chiều dọc
+- `Ctrl + Shift + \`: Chia đôi pane theo chiều ngang
+- `Ctrl + Shift + Z`: Phóng to/thu nhỏ pane hiện tại
+- `Ctrl + Shift + X`: Đóng pane hiện tại
+- `Ctrl + Shift + ←/→/↑/↓`: Di chuyển giữa các pane
+- `Ctrl + Shift + PageUp/PageDown`: Chuyển đổi giữa các tab
 
 ## Tùy chỉnh
 
@@ -65,3 +81,4 @@ config.font = wezterm.font("CaskaydiaCove Nerd Font", {weight = "Light"})
 - Cấu hình này được thiết kế để chạy trên WezTerm phiên bản mới nhất
 - Một số tính năng có thể không hoạt động trên phiên bản cũ hơn
 - Nếu gặp lỗi, hãy kiểm tra log của WezTerm bằng cách chạy `wezterm start --config-file /dev/null`
+- Để xem tất cả các phím tắt mặc định, chạy lệnh `wezterm show-keys`

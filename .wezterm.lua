@@ -14,9 +14,8 @@ config.window_background_opacity = 0.95 -- Tăng độ đậm một chút để 
 
 -- Tùy chỉnh màu sắc
 config.colors = {
-  -- Màu sắc cho vùng chọn
-  selection_fg = 'black',
-  selection_bg = '#fffacd',
+  selection_fg = '#e6e6fa',
+  selection_bg = '#2b3045',
 }
 
 -- Background với hình ảnh mờ (uncomment nếu muốn sử dụng)
@@ -114,32 +113,7 @@ config.keys = {
     action = act.AdjustPaneSize { "Down", 5 },
   },
 
-  -- Thêm phím tắt để làm việc với tab và pane
-  {
-    key = 't',
-    mods = 'CTRL|SHIFT',
-    action = act.SpawnTab "CurrentPaneDomain",
-  },
-  {
-    key = 'w',
-    mods = 'CTRL|SHIFT',
-    action = act.CloseCurrentTab { confirm = true },
-  },
-  {
-    key = '-',
-    mods = 'CTRL|SHIFT',
-    action = act.SplitVertical { domain = "CurrentPaneDomain" },
-  },
-  {
-    key = '\\',
-    mods = 'CTRL|SHIFT',
-    action = act.SplitHorizontal { domain = "CurrentPaneDomain" },
-  },
-  {
-    key = 'z',
-    mods = 'CTRL|SHIFT',
-    action = act.TogglePaneZoomState,
-  },
+  -- Thêm phím tắt hữu ích
   {
     key = 'c',
     mods = 'CTRL|SHIFT',
